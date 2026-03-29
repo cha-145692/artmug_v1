@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Suit-R';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Suit-B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Bold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/monas.css');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'SUIT', sans-serif;
+}
+
+:root{
+    --p100: #FFF8E1;
+    --p200: #FFEDB3;
+    --p300: #FFE082;
+    --p400: #FFD54F;
+    --p500: #FFC400;
+    --p600: #FFB000;
+    --p700: #FF9900;
+    --p800: #F57F00;
+    --p900: #D96A00;
+    --g100: #FAF8F4;
+    --g200: #F2EFE9;
+    --g300: #E0DCD4;
+    --g400: #BEB8AD;
+    --g500: #948D82;
+    --g600: #5F5850;
+    --g700: #433D36;
+    --g800: #2A2622;
+    --g900: #171411;
+    --bk:   #000000;
+
+    --pixel: 'MonaS12';
+}
+
