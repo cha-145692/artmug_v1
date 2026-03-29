@@ -639,7 +639,7 @@
             const target = document.getElementById(id);
             if (!target) return;
 
-            const offset = 50;
+            const offset = 80;
             const rect = target.getBoundingClientRect();
             const top = rect.top + window.scrollY - offset;
 
@@ -657,7 +657,7 @@
             let activeIdx = -1;
 
             sections.forEach((section, idx) => {
-                const currentTop = section.offsetTop - 80;
+                const currentTop = section.offsetTop - 120;
                 const nextTop = (idx + 1 < sections.length)
                 ? sections[idx + 1].offsetTop
                 : Infinity;
