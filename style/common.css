@@ -8,7 +8,7 @@
 .mona{font-family: var(--font), sans-serif;}
 
 body{background: var(--p200);}
-#container{width:1180px; max-width:100%; margin: 0 auto; background: linear-gradient(-9deg,#fff 0%,  var(--p100) 40%, #FFFCF2 100%); padding: 60px 40px 200px;}
+#container{width:1180px; max-width:100%; margin: 0 auto; background: linear-gradient(9deg,#fff 0%,  var(--p100) 40%, #FFFCF2 100%); padding: 60px 40px 200px;}
 
 img{max-width:100%}
 
@@ -152,6 +152,7 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     .profile .txt_sec .intro p{margin-top: 15px; font-size:14px; color:var(--g700)}
 
     .reservation{margin-top: 15.385vw; }
+    .reservation .sec_con{padding-bottom: 7.692vw;}
     .reservation .date_li{}
     .reservation .date_li li{gap:2.564vw; font-size:3.077vw;}
     .reservation .date_li li + li{margin-top: 2.564vw;}
