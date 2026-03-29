@@ -8,7 +8,7 @@
 .mona{font-family: var(--font), sans-serif;}
 
 body{background: var(--p200);}
-#container{width:1180px; max-width:100%; margin: 0 auto; background: linear-gradient(9deg,#FFFCF2 0%,  var(--p100) 40%, #fff 100%); padding: 60px 40px 200px;}
+#container{width:1180px; max-width:100%; margin: 0 auto; background: linear-gradient(9deg,#FFFCF2 0%,  var(--p100) 40%, #fff 100%); padding: 200px 40px 60px;}
 
 img{max-width:100%}
 
@@ -105,14 +105,14 @@ br.mo{display: none;}
 .request .con_wrap .btn_copy{margin: 50px auto 0; display: flex; justify-content: center; align-items: center; padding: 15px 60px; background: var(--p600); color:#fff; font-size:18px; font-weight:600; border:2px solid var(--p300); border-radius:8px; cursor:pointer}
 
 
-nav{background: var(--p500); position: fixed; bottom: 0; left: 0; right: 0; border-radius:20px 20px 0 0; z-index: 5;}
+nav{background: var(--p500); position: fixed; top: 0; left: 0; right: 0; z-index: 5;}
 nav .nav_li{display: flex; justify-content: center; gap:40px;}
 nav .nav_li li.on button{color:#fff}
 nav .nav_li li button{border:none; background: none; font-size:18px; font-weight:600; color:var(--p300); line-height: 60px; cursor:pointer; padding: 0;}
 
 @media(max-width:780px){
 
-    #container{padding: 10.256vw 3.846vw 30.769vw;}
+    #container{padding: 30.769vw 3.846vw 10.256vw;}
 
     section .sec_tit{width: 31.795vw; padding: 2.179vw 0; background:url('../img/sec_tab_bg_m.webp') no-repeat center top/cover; font-size:3.077vw; }
     section .sec_con{background:#fff url('../img/sec_tabbar_m.webp') no-repeat left top/100% auto; border:1px solid var(--p500); border-radius:0 2.564vw 2.564vw 2.564vw;padding: 16.41vw 2.564vw 2.564vw; margin-top: -0.256vw; box-shadow:0.769vw 0.769vw 0 0 var(--p500); gap:5.128vw}
