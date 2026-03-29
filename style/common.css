@@ -124,15 +124,15 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     section .con_wrap .con{padding: 2.564vw;}
 
     .dot_li li + li{margin-top: 1.282vw;}
-    .dot_li li .txt{position: relative; padding-left: 2.821vw; font-size:2.564vw;}
+    .dot_li li .txt{position: relative; padding-left: 2.821vw; font-size:3.077vw;}
     .dot_li li .txt:after{top: 1.282vw; width: 0.769vw; height: 0.769vw; }
     .price_li li:before{top: 1.538vw;}
-    .price_li li p{font-size:2.564vw;}
-    .price_li li p b{font-size:2.051vw; }
+    .price_li li p{font-size:3.077vw;}
+    .price_li li p b{font-size:2.564vw; }
     .price_li li p.txt{padding-right: 2.564vw; }
     .price_li li p.num{padding-left: 2.564vw; }
     .price_li li p.num span{font-size:2.051vw;}
-    .caption{padding: 0 2.564vw; font-size:2.051vw;}
+    .caption{padding: 0 2.564vw; font-size:2.564vw;}
 
     br.mo{display: block;}
 
@@ -162,7 +162,7 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     .portfolio .sec_con{padding: 16.41vw 2.564vw 2.564vw; gap:2.564vw}
     .portfolio .sl_portfolio .desc{padding: 2.051vw 0;}
     .portfolio .sl_portfolio .desc .tit{font-size:3.077vw;}
-    .portfolio .sl_portfolio .desc p{margin-top: 1.282vw; font-size:2.564vw}
+    .portfolio .sl_portfolio .desc p{margin-top: 1.282vw; font-size:2.821vw}
     .portfolio .sl_portfolio .btn{left: -1.538vw; right: -1.538vw;}
     .portfolio .sl_portfolio .btn button{display: block; width: 6.41vw; height: 6.41vw; border:1px solid var(--p500); background: var(--p200) url('../img/arr_mo_next.webp') no-repeat center center/ 4.615vw auto; cursor:pointer}
     .portfolio .sl_portfolio .btn button.prev{background-image:url('../img/arr_mo_prev.webp')}
@@ -173,7 +173,7 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     .sample .sample_li li{width: 30%;}
 
     .price .sec_con{flex-direction: column;}
-    .price .desc{margin-top: 3.846vw; font-size:2.564vw}
+    .price .desc{margin-top: 3.846vw; font-size:3.077vw}
     .price .compose{margin-top: 3.846vw;}
 
     .process{}
@@ -191,11 +191,11 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     .partner .partner_li li .img_sec{width: 28.205vw; height: 28.205vw;}
     .partner .partner_li li .txt_sec{width: calc(100% - 30.769vw);}
     .partner .partner_li li .txt_sec .info .name{font-size:3.077vw;}
-    .partner .partner_li li .txt_sec .info p{font-size:2.564vw;}
-    .partner .partner_li li .txt_sec span{ padding-right: 4.615vw; background:url('../img/arr_sm_next.webp') no-repeat right center / 2.051vw; font-size:2.051vw;}
+    .partner .partner_li li .txt_sec .info p{margin-top: 1.282vw; font-size:3.077vw;}
+    .partner .partner_li li .txt_sec span{ padding-right: 3.846vw; background:url('../img/arr_sm_next.webp') no-repeat right top / 3.077vw; font-size:2.564vw;}
 
     .request .con_wrap{padding: 3.846vw;}
-    .request .con_wrap .request_txt{font-size: 2.564vw;}
+    .request .con_wrap .request_txt{font-size: 2.821vw;}
     .request .con_wrap .btn_copy{margin: 5.128vw auto 0; display: flex; justify-content: center; align-items: center; padding: 2.051vw 5.128vw; background: var(--p600); color:#fff; font-size:3.077vw; font-weight:600; border:1px solid var(--p300); border-radius:8px; cursor:pointer}
 
     nav{padding-bottom: 2.564vw;}
