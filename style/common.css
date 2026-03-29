@@ -8,7 +8,7 @@
 .mona{font-family: var(--font), sans-serif;}
 
 body{background: var(--p200);}
-#container{width:1180px; max-width:100%; margin: 0 auto; background: linear-gradient(9deg,#fff 0%,  var(--p100) 40%, #FFFCF2 100%); padding: 60px 40px 200px;}
+#container{width:1180px; max-width:100%; margin: 0 auto; background: linear-gradient(9deg,#FFFCF2 0%,  var(--p100) 40%, #fff 100%); padding: 60px 40px 200px;}
 
 img{max-width:100%}
 
