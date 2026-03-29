@@ -11,12 +11,13 @@
     font-display: swap;
 }
 
-@import url('https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/monas.css');
+@import url("https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/monas.css");
 
 
-*{
+body *{
     box-sizing: border-box;
     font-family: 'SUIT', sans-serif;
+    line-height: 1.5;
 }
 
 :root{
@@ -40,6 +41,6 @@
     --g900: #171411;
     --bk:   #000000;
 
-    --pixel: 'MonaS12';
+    --font: 'MonaS12';
 }
 

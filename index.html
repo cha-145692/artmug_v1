@@ -1,15 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>라이브 투디 리거 단청</title>
-    <style>
-        @import url('./style/common.css');
-    </style>
-</head>
-<body>
-    hello
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>라이브 투디 리거 단청</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <style>
+            @import url('./style/common.css');
+        </style>
+
+
+    </head>
+    <body>
+        <div id="container">
+
+            <!-- 프로필 -->
+            <div class="profile">
+                <div class="img_sec">
+                    <img src="./img/prof_img.webp" alt="단청">
+                </div>
+                <div class="txt_sec">
+                    <div class="info">
+                        <h2 class="job mona">Live 2D Rigger</h2>
+                        <h1 class="name mona">단청</h1>
+                    </div>
+                    <div class="intro">
+                        <h3 class="tit mona">Introduce</h3>
+                        <p>캐릭터의 매력을 돋보이는 리깅을 추구합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- // 프로필 -->
+            
+
+            <!-- 예약 현황 -->
+            <section class="reservation">
+                <h3 class="sec_tit mona">예약 현황</h3>
+                <div class="sec_con">
+                    <ul class="date_li">
+                        <!-- 
+                        
+                        마감 : <span class="star mona fill"></span>
+                        빈 슬롯: <span class="star mona "></span>
+
+                        -->
+                        <li>
+                            <p class="month mona">5월</p>
+                            <div class="star_wrap">
+                                <span class="star mona fill"></span>
+                                <span class="star mona fill"></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p class="month mona">6월</p>
+                            <div class="star_wrap">
+                                <span class="star mona fill"></span>
+                                <span class="star mona "></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <p class="month mona">7월</p>
+                            <div class="star_wrap">
+                                <span class="star mona "></span>
+                                <span class="star mona "></span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <!-- // 예약 현황 -->
+
+
+            <!-- 포트폴리오 현황 -->
+            <section class="portfolio nav_sec" id="portfolio">
+                <h3 class="sec_tit mona">포트폴리오</h3>
+                <div class="sec_con">
+
+                    <!-- 포트폴리오 큰 슬라이드 -->
+                    <div class="swiper sl_portfolio">
+                        <ul class="swiper-wrapper">
+
+                            <!-- 
+                            유투브 영상 url의 v= 이후에 나오는 텍스트가 영상의 고유 id 값입니다.
+                            
+                            ex) https://www.youtube.com/watch?v=Kal4pauop5U&list=RDKal4pauop5U&start_radio=1
+
+                            위 영상을 예로 들면 & 뒤는 다 지우고 v= 바로 뒤의 단어인 Kal4pauop5U 값이 영상의 id 값.
+                            data-code ="영상 id값 넣으면 썸네일과 영상슬라이드에 자동 추가됩니다."
+                            
+
+
+
+                            <li class="swiper-slide">
+                                <div class="video" data-code="영상 id값">
+                                    
+                                </div>
+                                <div class="desc">
+                                    <h4 class="tit mona">
+                                        유투브 정보 타이틀
+                                    </h4>
+                                    <p>
+                                        설명내용
+                                    </p>
+                                </div>
+                            </li>
+
+                            
+                            -->
+
+                            <!-- 슬라이드 항목-->
+                            <li class="swiper-slide">
+                                <div class="video" data-code="UediEKOHI5E">
+                                    
+                                </div>
+                                <div class="desc">
+                                    <h4 class="tit mona">유투브 정보: 누구누구</h4>
+                                    <p>어쩌고저쩌고~~</p>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div class="video" data-code="cJ6VijbNkF4">
+                                </div>
+                                <div class="desc">
+                                    <h4 class="tit mona">유투브 정보: 누구누구2</h4>
+                                    <p>어쩌고저쩌고~~</p>
+                                </div>
+                            </li>
+                            
+                            <li class="swiper-slide">
+                                <div class="video" data-code="UediEKOHI5E">
+                                </div>
+                                <div class="desc">
+                                    <h4 class="tit mona">유투브 정보: 누구누구3</h4>
+                                    <p>어쩌고저쩌고~~</p>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div class="video" data-code="cJ6VijbNkF4">
+                                </div>
+                                <div class="desc">
+                                    <h4 class="tit mona">유투브 정보: 누구누구4</h4>
+                                    <p>어쩌고저쩌고~~</p>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div class="video" data-code="UediEKOHI5E">
+                                </div>
+                                <div class="desc">
+                                    <h4 class="tit mona">유투브 정보: 누구누구5</h4>
+                                    <p>어쩌고저쩌고~~</p>
+                                </div>
+                            </li>
+
+                            
+                            <!-- //슬라이드 항목 -->
+
+                        </ul>
+                        <div class="btn">
+                            <button class="prev"></button>
+                            <button class="next"></button>
+                        </div>
+                    </div>
+
+                    <!-- 포트폴리오 페이징 슬라이드 -->
+                    <div class="swiper sl_portfolio_thumb">
+                        <ul class="swiper-wrapper">
+                        </ul>
+                    </div>
+                   
+                </div>
+            </section>
+            <!-- // 포트폴리오 현황 -->
+
+            <!-- 리깅 샘플 -->
+            <section class="sample nav_sec" id="sample">
+                <h3 class="sec_tit mona">리깅 샘플</h3>
+                <div class="sec_con">
+
+                    <!-- 
+                    
+                    샘플 단위
+                    최적 사이즈 : 326px * 326px
+
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona"> 리깅 단위 </h3>
+                        <ul class="con sample_li">
+                            <li><img src="./img/이미지 명.확장자" alt=""></li>
+                            <li><img src="./img/이미지 명.확장자" alt=""></li>
+                            <li><img src="./img/이미지 명.확장자" alt=""></li>
+                        </ul>
+                    </div>
+                    
+                    -->
+
+                    <!-- 샘플 단위 -->
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona">얼굴</h3>
+                        <ul class="con sample_li">
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- // 샘플 단위 -->
+
+                    <!-- 샘플 단위 -->
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona">입 움직임</h3>
+                        <ul class="con sample_li">
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- // 샘플 단위 -->
+
+                    <!-- 샘플 단위 -->
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona">몸 움직임</h3>
+                        <ul class="con sample_li">
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- // 샘플 단위 -->
+
+                    <!-- 샘플 단위 -->
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona">물리</h3>
+                        <ul class="con sample_li">
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- // 샘플 단위 -->
+
+                    <!-- 샘플 단위 -->
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona">표정</h3>
+                        <ul class="con sample_li">
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- // 샘플 단위 -->
+
+                    <!-- 샘플 단위 -->
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona">추가 에셋</h3>
+                        <ul class="con sample_li">
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                            <li><img src="./img/prof_img.webp" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- // 샘플 단위 -->
+
+                </div>
+            </section>
+            <!-- // 리깅 샘플 -->
+
+            <!-- 가격 안내 -->
+            <section class="price nav_sec" id="price">
+                <h3 class="sec_tit mona">가격 안내</h3>
+                <div class="sec_con">
+
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona">기본 옵션</h3>
+                        <div class="con">
+                            <ul class="dot_li price_li">
+                                <li><p class="txt">LD 반신</p><p class="num">500,000</p></li>
+                                <li><p class="txt">LD 전신</p><p class="num">800,000</p></li>
+                            </ul>
+                            <p class="desc">
+                                타입 구분 없이 <em>모든 작업 풀퀄리티</em>로
+                                <br>최선을 다해 작업합니다.
+                            </p>
+                            <ul class="dot_li compose">
+                                <li><p class="txt">얼굴/몸 XYZ</p></li>
+                                <li><p class="txt">입모양 9점</p></li>
+                                <li><p class="txt">눈, 머리카락, 몸, 의상 물리</p></li>
+                                <li>
+                                    <p class="txt">표정 3점</p>
+                                    <span class="caption mona">
+                                        표정파츠가 포함된 PSD를 제공해주셔야합니다.
+                                        <br>애니메이션 기능은 포함되지 않습니다.
+                                    </span>
+                                </li>
+                            </ul>                           
+                        </div>
+                    </div>
+
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona">추가 옵션</h3>
+                        <div class="con">
+                            <ul class="dot_li price_li">
+
+                                <!--
+                                    html에서 줄넘김(엔터)는 <br>
+                                -->
+
+                                <li>
+                                    <p class="txt">VBridger</p><p class="num">250,000</p>
+                                    <span class="caption mona">
+                                        표정파츠가 포함된 PSD를 제공해주셔야합니다.
+                                        <br>애니메이션 기능은 포함되지 않습니다.
+                                    </span>
+                                </li>
+                                <li><p class="txt">동물 귀/뿔/꼬리</p><p class="num">50,000+</p></li>
+                                <li><p class="txt">헤어 추가</p><p class="num">200,000+</p></li>
+                                <li><p class="txt">의상 추가</p><p class="num">300,000+</p></li>
+                                <li><p class="txt">표정 추가</p><p class="num">10,000</p></li>
+                                <li>
+                                    <p class="txt">표정 추가 <b class="mona">(애니메이션)</b></p><p class="num">30,000+</p>
+                                    <span class="caption mona">
+                                       애니메이션 기능이 포함된 눈물, 하트, 반짝 등
+                                    </span>
+                                </li>
+                                <li><p class="txt">250파츠 이상 추가금</p><p class="num"><span class="mona">(10파츠 당)</span> 30,000</p></li>
+                                <li><p class="txt">게임 컨트롤러</p><p class="num">150,000+</p></li>
+                                <li><p class="txt">마이크</p><p class="num">50,000</p></li>
+                                <li><p class="txt">기타 에셋</p><p class="num">문의</p></li>
+                            </ul>   
+                            <p class="desc">
+                                옵션에 없는 리깅도 편하게 문의주세요!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- // 가격 안내 -->
+
+            <!-- 작업 과정 -->
+            <section class="process nav_sec" id="process">
+                <h3 class="sec_tit mona">작업 과정</h3>
+                <div class="sec_con">
+                    <ul class="process_li rolling">
+                        <li class="mona on">의뢰서 및 PSD 전달</li>
+                        <li class="mona">견적 확인</li>
+                        <li class="mona">입금</li>
+                        <li class="mona">얼굴 리깅(1차 컨펌)</li>
+                        <li class="mona">몸 리깅(2차 컨펌)</li>
+                        <li class="mona">완성 및 전달</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- // 작업 과정 -->
+
+            <!-- 공지사항 -->
+            <section class="notice nav_sec" id="notice">
+                <h3 class="sec_tit mona">공지사항</h3>
+                <div class="sec_con">
+
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona">신청 안내</h3>
+                        <div class="con">
+                            <ul class="dot_li">
+                                <li>
+                                    <p class="txt">
+                                        신청함으로써 공지사항에 동의한 것으로 간주합니다.
+                                        <br>공지사항을 숙지하지 않아 발생하는 문제에 대해서는 책임지지 않습니다.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="txt">
+                                        작업물의 저작권은 저(단청)에게 있습니다.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="txt">
+                                        사전 동의 없는 양도 및 재판매, <em>AI사용 불가</em>. 저작권 구매시 문의 주세요.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="txt">
+                                        모든 작업물은 홍보 및 포트폴리오 목적으로 사용될 수 있으며, 
+                                        <br>작업과정이 방송 혹은 영상 콘텐츠로 공개될 수 있습니다.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="txt">
+                                        작업과정 공개 여부는 사전 조율 가능하지만 영구 비공개 의뢰 불가능합니다.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="txt">
+                                        작업물 사용시 반드시 아이디<a href="//x.com/cha145692" target="_blank" class="mona">(@cha145692)</a> 를 기재하셔야 합니다.  
+                                    </p>
+                                </li>
+                            </ul>                      
+                        </div>
+                    </div>
+
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona">작업 안내</h3>
+                        <div class="con">
+                            <ul class="dot_li">
+                                <li>
+                                    <p class="txt">
+                                        작업물은 moc3 파일(Vtube Studio 실행파일)로 전달되며 <br class="mo">작업 원본 파일(cmo3)은 전달되지 않습니다.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="txt">
+                                        작업기한은 2주~5주가 소요되며 <br class="mo">일정과 작업물의 복잡함에 따라 변경될 수 있습니다.
+                                    </p>
+                                </li>
+                            </ul>                      
+                        </div>
+                    </div>
+
+                    <div class="con_wrap">
+                        <h3 class="con_tt mona">예약 및 환불 안내</h3>
+                        <div class="con">
+                            <ul class="dot_li">
+                                <li>
+                                    <p class="txt">
+                                        예약시 전체 견적의 10%를 예약금으로 받습니다. <br class="mo">예약 취소시 환불되지 않습니다.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="txt">
+                                        작업시작 후 70% 환불 / 눈 움직임완성 후 50% 환불 / 그 이후 환불 불가
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="txt">
+                                        작업물 전달 후 1년동안 기술적 하자및 오류로 인한 AS 가능합니다. 
+                                        <br>다만 컨펌단계가 지난 부분에 대한 수정은 불가능합니다. <br class="mo"><b class="mona">(ex. 작업물 전달 후, 얼굴 형태 리깅 수정 불가능)</b>
+                                    </p>
+                                </li>
+                            </ul>                      
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- // 공지사항 -->
+
+            <!-- 협업 작가 -->
+            <section class="partner">
+                <h3 class="sec_tit mona">협업 작가</h3>
+                <div class="sec_con">
+                    
+                    <div class="partner_li">
+                        
+                        <!-- 
+                        
+                        <li class="con_wrap">
+                           <a href="연결될 링크" target="_blank">
+                                <div class="img_sec">
+                                    <img src="./img/prof_img.webp" alt="">
+                                </div>
+                                <div class="txt_sec">
+                                    <div class="info">
+                                        <p class="name mona">작가명</p>
+                                        <p>작가 설명 두어줄~~~</p>
+                                    </div>
+                                    <span class="mona">바로가기</span>
+                                </div>
+                           </a>
+                        </li> 
+                        
+                        -->
+                        
+                        <li class="con_wrap">
+                           <a href="연결될 링크" target="_blank">
+                                <div class="img_sec">
+                                    <img src="./img/prof_img.webp" alt="">
+                                </div>
+                                <div class="txt_sec">
+                                    <div class="info">
+                                        <p class="name mona">작가명</p>
+                                        <p>작가 설명 두어줄~~~</p>
+                                    </div>
+                                    <span class="mona">바로가기</span>
+                                </div>
+                           </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <!-- // 협업 작가 -->
+
+            <!-- 의뢰 신청 양식 -->
+            <section class="request nav_sec" id="request">
+                <h3 class="sec_tit mona">의뢰 신청 양식</h3>
+                <div class="sec_con">
+
+                    <div class="con_wrap">
+                        <p class="request_txt">
+★0. PSD파일 첨부 필수!★
+1. 개인/기업 및 활동 닉네임: 
+2. 방송장비 (웹캠 or 아이폰):
+3. 추가 옵션: 
+4. 일러스트 작가님 (연락처, SNS계정 , 아트머그 페이지 등):
+5. 제작과정 공개가능 여부/작업물 공개가능일 (영구비공개 불가):
+6. 캐릭터 설정 및 참고자료:
+7. 기타 문의 사항:
+                        </p>
+                        <button class="btn_copy mona" onclick="copy();">양식 복사하기</button>
+                    </div>
+
+                </div>
+            </section>
+            <!-- // 의뢰 신청 양식 -->
+
+
+        </div>
+
+        <nav>
+            <ul class="nav_li">
+                <li class="on"><button onclick="scroll_to_anchor('portfolio')" class="mona">포트폴리오</button></li>
+                <li><button onclick="scroll_to_anchor('sample')" class="mona">리깅샘플</button></li>
+                <li><button onclick="scroll_to_anchor('price')" class="mona">가격안내</button></li>
+                <li><button onclick="scroll_to_anchor('process')" class="mona">작업과정</button></li>
+                <li><button onclick="scroll_to_anchor('notice')" class="mona">공지사항</button></li>
+                <li><button onclick="scroll_to_anchor('request')" class="mona">신청양식</button></li>
+            </ul>
+        </nav>
+    </body>
+
+    <script>
+
+        // 포트폴리오 리스트 노출
+
+        const portfolio = document.querySelector('.sl_portfolio');
+        const slides = portfolio.querySelectorAll('.swiper-slide');
+        const thumb_wrap = document.querySelector('.sl_portfolio_thumb .swiper-wrapper');
+
+        slides.forEach(function(slide){
+            const video = slide.querySelector('.video');
+            const code = video.dataset.code;
+
+            video.innerHTML = `
+                <iframe 
+                    src="https://www.youtube.com/embed/${code}" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            `;
+        });
+
+        let thumbs_html = '';
+
+        slides.forEach(function(slide){
+            const code = slide.querySelector('.video').dataset.code;
+
+            thumbs_html += `
+                <div class="swiper-slide">
+                    <div class="video">
+                        <img src="https://img.youtube.com/vi/${code}/0.jpg">
+                    </div>
+                </div>
+            `;
+        });
+
+        thumb_wrap.innerHTML = thumbs_html;
+
+
+
+        // 양식복사
+        function copy(){
+            const text = document.querySelector('.request_txt').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert("클립보드에 복사되었습니다.");
+            }).catch(err => {
+                console.error('복사 실패:', err);
+            });
+        }
+        
+        
+        var num = 0;
+        setInterval(function () {
+            
+            document.querySelectorAll('.rolling').forEach(function (rolling, index) {
+                const liList = rolling.querySelectorAll('li');
+                const max = liList.length;
+
+                liList.forEach(function (li) {
+                    li.classList.remove('on');
+                });
+
+
+                if (liList[num]) {
+                    liList[num].classList.add('on');
+                }
+
+                num++;
+
+                if (num === max) num = 0;
+
+            });
+
+        }, 1000);
+        
+
+        
+        document.addEventListener('DOMContentLoaded', function(){
+
+            var sl_portfolio_thumb = new Swiper(".sl_portfolio_thumb", {
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+                draggable:true,
+                
+
+                breakpoints:{
+                    780:{
+                        spaceBetween: 20,
+                    }
+                }
+            });
+
+            var sl_portfolio = new Swiper(".sl_portfolio", {
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".sl_portfolio .btn .next",
+                    prevEl: ".sl_portfolio .btn .prev",
+                },
+                thumbs: {
+                    swiper: sl_portfolio_thumb,
+                },
+                effect:'fade',
+            });
+
+        })
+
+
+       function scroll_to_anchor(id) {
+            const target = document.getElementById(id);
+            if (!target) return;
+
+            const offset = 50;
+            const rect = target.getBoundingClientRect();
+            const top = rect.top + window.scrollY - offset;
+
+            window.scrollTo({
+                top: top,
+                behavior: 'smooth'
+            });
+        }
+
+        
+        var sections = document.querySelectorAll('.nav_sec');
+        var cateItems = document.querySelectorAll('nav li')
+        window.addEventListener('scroll', () => {
+            const winScr = window.scrollY;
+            let activeIdx = -1;
+
+            sections.forEach((section, idx) => {
+                const currentTop = section.offsetTop - 80;
+                const nextTop = (idx + 1 < sections.length)
+                ? sections[idx + 1].offsetTop
+                : Infinity;
+
+                if (winScr >= currentTop && winScr < nextTop) {
+                activeIdx = idx;
+                }
+            });
+
+            if (winScr < sections[0].offsetTop) {
+                activeIdx = 0;
+            }
+
+            cateItems.forEach(item => item.classList.remove('on'));
+
+            if (activeIdx !== -1 && cateItems[activeIdx]) {
+                cateItems[activeIdx].classList.add('on');
+            }
+        });
+    </script>
 </html>
