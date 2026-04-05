@@ -3,7 +3,6 @@
 
 #cha145692{max-width:100%;}
 
-
 /* 공통 */
 .mona{font-family: var(--font), sans-serif;}
 
@@ -112,7 +111,7 @@ nav .nav_li li.on button{color:#fff}
 nav .nav_li li button{border:none; background: none; font-size:18px; font-weight:600; color:var(--p300); line-height: 60px; cursor:pointer; padding: 0;}
 
 @media(max-width:780px){
-
+    iframe#cha145692{height:100vh !important}
     #container{padding: 30.769vw 3.846vw 10.256vw;}
 
     section .sec_tit{width: 31.795vw; padding: 2.179vw 0; background:url('../img/sec_tab_bg_m.webp') no-repeat center top/cover; font-size:3.077vw; }
