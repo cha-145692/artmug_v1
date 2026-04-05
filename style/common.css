@@ -111,6 +111,7 @@ nav .nav_li li.on button{color:#fff}
 nav .nav_li li button{border:none; background: none; font-size:18px; font-weight:600; color:var(--p300); line-height: 60px; cursor:pointer; padding: 0;}
 
 @media(max-width:780px){
+    body{background: #fff}
     iframe#cha145692{height:100vh !important}
     #container{padding: 32.769vw 3.846vw 12.256vw;}
 
