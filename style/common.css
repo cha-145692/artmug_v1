@@ -51,6 +51,7 @@ br.mo{display: none;}
 .profile .txt_sec .intro p{margin-top: 15px; font-size:14px; color:var(--g700)}
 
 .reservation{margin-top: 100px; }
+.reservation .notice_wrap{text-align:center}
 .reservation .date_li li{display: flex; justify-content: center; align-items: center; gap:15px; font-size:18px;}
 .reservation .date_li li + li{margin-top: 10px;}
 .reservation .date_li li .star_wrap{display: flex; gap:5px}
@@ -170,7 +171,8 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     
 
     .sample .sample_li{gap:5%}
-    .sample .sample_li li{width: 30%;}
+    .sample .sample_li li{width: 100%;}
+    .face .sample .sample_li li{width: 30%;}
 
     .price .sec_con{flex-direction: column;}
     .price .desc{margin-top: 3.846vw; font-size:3.077vw; padding: 0 2.564vw;}
