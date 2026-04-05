@@ -121,7 +121,7 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
 
     section .con_wrap{width: 100%; border-radius:2.564vw; border:1px solid var(--p300); box-shadow:0.513vw 0.513vw 0 0 var(--p400); overflow: hidden;}
     section .con_wrap .con_tt{padding: 4.051vw 0; border-bottom:1px solid var(--p300); background: var(--p100); text-align: center; font-size:3.577vw; font-weight:600; color:var(--p600)}
-    section .con_wrap .con{padding: 2.564vw;}
+    section .con_wrap .con{padding: 4.564vw 2.564vw ;}
 
     .dot_li li + li{margin-top: 2.551vw;}
     .dot_li li .txt{position: relative; padding-left: 2.821vw; font-size:3.077vw;}
