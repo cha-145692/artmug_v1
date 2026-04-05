@@ -112,18 +112,18 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
 
 @media(max-width:780px){
     iframe#cha145692{height:100vh !important}
-    #container{padding: 30.769vw 3.846vw 10.256vw;}
+    #container{padding: 32.769vw 3.846vw 12.256vw;}
 
-    section .sec_tit{width: 31.795vw; padding: 2.179vw 0; background:url('../img/sec_tab_bg_m.webp') no-repeat center top/cover; font-size:3.077vw; }
-    section .sec_con{background:#fff url('../img/sec_tabbar_m.webp') no-repeat left top/100% auto; border:1px solid var(--p500); border-radius:0 2.564vw 2.564vw 2.564vw;padding: 16.41vw 2.564vw 2.564vw; margin-top: -0.256vw; box-shadow:0.769vw 0.769vw 0 0 var(--p500); gap:5.128vw}
+    section .sec_tit{width: 31.795vw; padding: 3.179vw 0; background:url('../img/sec_tab_bg_m.webp') no-repeat center bottom/100% auto; font-size:3.177vw; }
+    section .sec_con{background:#fff url('../img/sec_tabbar_m.webp') no-repeat left top/100% auto; border:1px solid var(--p500); border-radius:0 2.564vw 2.564vw 2.564vw;padding: 18.41vw 2.564vw 3.564vw; margin-top: -0.256vw; box-shadow:0.769vw 0.769vw 0 0 var(--p500); gap:7.128vw}
     
     section + section{margin-top: 10.256vw;}
 
     section .con_wrap{width: 100%; border-radius:2.564vw; border:1px solid var(--p300); box-shadow:0.513vw 0.513vw 0 0 var(--p400); overflow: hidden;}
-    section .con_wrap .con_tt{padding: 2.051vw 0; border-bottom:1px solid var(--p300); background: var(--p100); text-align: center; font-size:3.077vw; font-weight:600; color:var(--p600)}
+    section .con_wrap .con_tt{padding: 4.051vw 0; border-bottom:1px solid var(--p300); background: var(--p100); text-align: center; font-size:3.577vw; font-weight:600; color:var(--p600)}
     section .con_wrap .con{padding: 2.564vw;}
 
-    .dot_li li + li{margin-top: 2.051vw;}
+    .dot_li li + li{margin-top: 2.551vw;}
     .dot_li li .txt{position: relative; padding-left: 2.821vw; font-size:3.077vw;}
     .dot_li li .txt:after{top: 1.282vw; width: 0.769vw; height: 0.769vw; }
     .price_li li:before{top: 1.538vw;}
