@@ -10,6 +10,30 @@
         <link rel="stylesheet" href="./style/common.css">
 
 
+
+        <style>
+            /* 가격 안내 배치만 변경: 위 2칸 + 아래 추천 패키지 전체폭 */
+            .price .sec_con{
+                flex-wrap: wrap;
+            }
+            .price .sec_con > .con_wrap{
+                flex: 1 1 calc(50% - 15px);
+                min-width: 0;
+            }
+            .price .sec_con > .package_full{
+                flex: 0 0 100%;
+                width: 100%;
+            }
+
+            @media(max-width:780px){
+                .price .sec_con > .con_wrap,
+                .price .sec_con > .package_full{
+                    flex: 0 0 100%;
+                    width: 100%;
+                }
+            }
+        </style>
+
     </head>
     <body>
         <div id="container">
@@ -327,7 +351,7 @@
                     </div>
 
 
-                    <div class="con_wrap">
+                    <div class="con_wrap package_full">
                         <h3 class="con_tt mona">추천 패키지</h3>
                         <div class="con">
                             <ul class="dot_li price_li">
