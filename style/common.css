@@ -49,13 +49,7 @@ br.mo{display: none;}
 .profile .txt_sec .intro .tit:before{content:''; position: absolute; left: 0; top: 50%; transform:translateY(-50%); width: 12px; height: 12px; border:2px solid var(--p400); box-shadow: 2px 2px 0 0 var(--p500);}
 .profile .txt_sec .intro p{margin-top: 15px; font-size:14px; color:var(--g700)}
 
-.reservation{margin-top: 100px; }
-.reservation .reserve_notice{text-align:center}
-.reservation .date_li li{display: flex; justify-content: center; align-items: center; gap:15px; font-size:18px;}
-.reservation .date_li li + li{margin-top: 10px;}
-.reservation .date_li li .star_wrap{display: flex; gap:5px}
-.reservation .date_li .star{display: block; width: 30px; height: 30px; background:url('../img/star.webp') no-repeat center center/cover}
-.reservation .date_li .star.fill{background-image:url('../img/star_fill.webp')}
+.reservation{margin-top: 100px;}
 
 .portfolio .sec_con{padding: 90px 100px 30px; gap:20px}
 .portfolio .swiper{width: 100%;}
@@ -90,15 +84,6 @@ br.mo{display: none;}
 
 .notice b{font-size:12px;}
 
-.partner .partner_li{display: flex; gap:20px; justify-content: center;}
-.partner .partner_li li{width: 340px;}
-.partner .partner_li li a{display: flex; gap:10px; width: 100%; height: 100%; padding: 10px; }
-.partner .partner_li li .img_sec{width: 110px; height: 110px;}
-.partner .partner_li li .img_sec img{width: 100%; height: 100%; object-fit:cover} 
-.partner .partner_li li .txt_sec{display: flex; flex-direction: column; justify-content: space-between; width: calc(100% - 120px);}
-.partner .partner_li li .txt_sec .info .name{color:var(--p500); font-size:16px; font-weight:600}
-.partner .partner_li li .txt_sec .info p{font-size:14px; color:var(--g700);}
-.partner .partner_li li .txt_sec span{display: block; text-align: right; padding-right: 20px; background:url('../img/arr_sm_next.webp') no-repeat right center; color:var(--p500); font-size:12px; font-weight:600}
 
 .request .con_wrap{padding: 40px;}
 .request .con_wrap .request_txt{font-size: 18px; color:var(--g700); white-space: pre;}
@@ -110,9 +95,250 @@ nav .nav_li{display: flex; justify-content: center; gap:40px;}
 nav .nav_li li.on button{color:#fff}
 nav .nav_li li button{border:none; background: none; font-size:18px; font-weight:600; color:var(--p300); line-height: 60px; cursor:pointer; padding: 0;}
 
+/* =========================================================
+   추가 커스텀
+   ========================================================= */
+
+/* 가격 안내: 위 2칸 + 아래 추천 패키지 전체폭 */
+.price .sec_con{
+    flex-wrap:wrap;
+}
+.price .sec_con > .con_wrap{
+    flex:1 1 calc(50% - 15px);
+    min-width:0;
+}
+.price .sec_con > .package_full{
+    flex:0 0 100%;
+    width:100%;
+}
+
+/* 추천 패키지 */
+.package_full .package_special{
+    padding:30px;
+}
+.package_head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+.package_info{
+    min-width:0;
+}
+.package_badge{
+    display:inline-block;
+    padding:5px 12px;
+    margin-bottom:10px;
+    background:var(--p500);
+    color:#fff;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+.package_name{
+    color:var(--g900);
+    font-size:24px;
+    font-weight:600;
+}
+.package_copy{
+    margin-top:10px;
+    color:var(--g700);
+    font-size:14px;
+}
+.package_price{
+    flex-shrink:0;
+    text-align:right;
+}
+.package_price del{
+    display:block;
+    color:var(--g400);
+    font-size:18px;
+    font-weight:600;
+}
+.package_price strong{
+    display:block;
+    margin-top:3px;
+    color:var(--p700);
+    font-size:28px;
+    font-weight:600;
+}
+.package_price span{
+    display:inline-block;
+    margin-top:7px;
+    padding:4px 9px;
+    background:var(--p300);
+    color:var(--p700);
+    font-size:12px;
+    font-weight:600;
+}
+.package_tags{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:24px;
+    padding-top:20px;
+    border-top:2px dotted var(--p300);
+}
+.package_tags li{
+    padding:8px 15px;
+    border:1px solid var(--p300);
+    border-radius:20px;
+    background:var(--p100);
+    color:var(--p700);
+    font-size:14px;
+    font-weight:600;
+}
+
+/* LD 전신 오픈 할인 */
+.price_li li.fullbody_sale{
+    align-items:center;
+}
+.price_li li.fullbody_sale:before{
+    top:50%;
+}
+.fullbody_sale_price{
+    position:relative;
+    z-index:1;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding-left:10px;
+    background:#fff;
+}
+.fullbody_sale_price del,
+.fullbody_sale_price strong{
+    font-size:16px;
+    font-family:'SUIT-B';
+    font-weight:normal;
+}
+.fullbody_sale_price del{
+    color:var(--g400);
+}
+.fullbody_sale_price strong{
+    color:var(--p700);
+}
+.fullbody_sale_badge{
+    display:inline-block;
+    margin-left:6px;
+    padding:4px 9px;
+    background:var(--p300);
+    color:var(--p700);
+    font-size:12px;
+    font-weight:600;
+    line-height:1.2;
+    vertical-align:middle;
+}
+
+/* 기본 옵션 구성 태그 */
+.base_tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:24px;
+}
+.base_tags li{
+    padding:8px 15px;
+    border:1px solid var(--p300);
+    border-radius:20px;
+    background:var(--p100);
+    color:var(--p700);
+    font-size:14px;
+    font-weight:600;
+}
+.base_caption{
+    margin-top:12px;
+    color:var(--p500);
+    font-size:12px;
+    line-height:1.6;
+}
+
+/* 예약 현황 */
+.reservation .sec_con{
+    align-items:center;
+    justify-content:center;
+}
+.reserve_simple{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.reserve_period{
+    box-sizing:border-box;
+    width:70%;
+    margin:0 auto;
+    padding:16px 20px;
+    text-align:center;
+    border:1px solid var(--p300);
+    border-radius:8px;
+    background:var(--p100);
+    color:var(--g700);
+    font-size:15px;
+    font-weight:600;
+}
+
+/* 협업 작가: 2열 배너 카드 */
+.partner .sec_con{
+    gap:20px;
+}
+.partner_intro{
+    padding:0 4px;
+}
+.partner_intro h4{
+    color:var(--p700);
+    font-size:18px;
+    font-weight:600;
+}
+.partner_card_grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:20px;
+}
+.partner_card{
+    overflow:hidden;
+    border:2px solid var(--p300);
+    border-radius:16px;
+    background:#fff;
+    box-shadow:4px 4px 0 0 var(--p400);
+}
+.partner_card a{
+    display:block;
+    width:100%;
+    height:100%;
+    color:inherit;
+    text-decoration:none;
+}
+.partner_banner{
+    width:100%;
+    aspect-ratio:2 / 1;
+    overflow:hidden;
+    background:var(--p100);
+    border-bottom:2px solid var(--p300);
+}
+.partner_banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.partner_card_body{
+    padding:18px 20px 20px;
+}
+.partner_name{
+    margin-bottom:10px;
+    color:var(--g900);
+    font-size:20px;
+    font-weight:600;
+}
+.partner_card_body p:not(.partner_name){
+    margin-top:4px;
+    color:var(--g700);
+    font-size:15px;
+    line-height:1.5;
+}
+
+
 @media(max-width:780px){
     body{background: #fff}
-    iframe#cha145692{height:100vh !important}
     #container{padding: 32.769vw 3.846vw 12.256vw;}
 
     section .sec_tit{width: 31.795vw; padding: 3.179vw 0; background:url('../img/sec_tab_bg_m.webp') no-repeat center bottom/100% auto; font-size:3.177vw; }
@@ -138,7 +364,6 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     br.mo{display: block;}
 
 
-
         
     /* 섹션별 */
 
@@ -154,11 +379,6 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
 
     .reservation{margin-top: 15.385vw; }
     .reservation .sec_con{padding-bottom: 7.692vw;}
-    .reservation .date_li{}
-    .reservation .date_li li{gap:2.564vw; font-size:3.077vw;}
-    .reservation .date_li li + li{margin-top: 2.564vw;}
-    .reservation .date_li li .star_wrap{display: flex; gap:2.051vw}
-    .reservation .date_li .star{display: block; width: 4.872vw; height: 4.872vw;}
 
     .portfolio .sec_con{padding: 16.41vw 2.564vw 2.564vw; gap:2.564vw}
     .portfolio .sl_portfolio .desc{padding: 2.051vw 0;}
@@ -187,15 +407,6 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
 
     .notice b{font-size:2.564vw;}
 
-    .partner .partner_li{gap:2.564vw; flex-direction: column;}
-    .partner .partner_li li{width: 100%;}
-    .partner .partner_li li a{display: flex; gap:2.564vw; width: 100%; height: 100%; padding: 10px; }
-    .partner .partner_li li .img_sec{width: 28.205vw; height: 28.205vw;}
-    .partner .partner_li li .txt_sec{width: calc(100% - 30.769vw);}
-    .partner .partner_li li .txt_sec .info .name{font-size:3.077vw;}
-    .partner .partner_li li .txt_sec .info p{margin-top: 1.282vw; font-size:3.077vw;}
-    .partner .partner_li li .txt_sec span{ padding-right: 3.846vw; background:url('../img/arr_sm_next.webp') no-repeat right top / 3.077vw; font-size:2.564vw;}
-
     .request .con_wrap{padding: 3.846vw;}
     .request .con_wrap .request_txt{font-size: 2.821vw;}
     .request .con_wrap .btn_copy{margin: 5.128vw auto 0; display: flex; justify-content: center; align-items: center; padding: 2.051vw 5.128vw; background: var(--p600); color:#fff; font-size:3.077vw; font-weight:600; border:1px solid var(--p300); border-radius:8px; cursor:pointer}
@@ -204,5 +415,119 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     nav .nav_li{display: flex; justify-content: center; gap:2.564vw;}
     nav .nav_li li button{font-size:3.077vw; line-height: 12.308vw;}
 
+
+    /* 추가 커스텀 - 모바일 */
+    .price .sec_con > .con_wrap,
+    .price .sec_con > .package_full{
+        flex:0 0 100%;
+        width:100%;
+    }
+
+    .package_full .package_special{
+        padding:5.128vw 3.846vw;
+    }
+    .package_head{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:4.103vw;
+    }
+    .package_badge{
+        padding:1.026vw 2.564vw;
+        margin-bottom:2.051vw;
+        font-size:2.564vw;
+    }
+    .package_name{
+        font-size:4.615vw;
+    }
+    .package_copy{
+        margin-top:2.051vw;
+        font-size:3.077vw;
+        line-height:1.6;
+    }
+    .package_price{
+        width:100%;
+        text-align:left;
+    }
+    .package_price del{
+        font-size:3.333vw;
+    }
+    .package_price strong{
+        font-size:5.641vw;
+    }
+    .package_price span{
+        margin-top:1.538vw;
+        padding:1.026vw 2.051vw;
+        font-size:2.564vw;
+    }
+    .package_tags{
+        gap:2.051vw;
+        margin-top:4.615vw;
+        padding-top:3.846vw;
+    }
+    .package_tags li{
+        padding:1.538vw 3.077vw;
+        font-size:3.077vw;
+    }
+
+    .fullbody_sale_price{
+        gap:1.538vw;
+        padding-left:2.564vw;
+    }
+    .fullbody_sale_price del,
+    .fullbody_sale_price strong{
+        font-size:3.077vw;
+    }
+    .fullbody_sale_badge{
+        margin-left:1.026vw;
+        padding:1.026vw 2.051vw;
+        font-size:2.564vw;
+    }
+
+    .base_tags{
+        gap:2.051vw;
+        margin-top:4.615vw;
+    }
+    .base_tags li{
+        padding:1.538vw 3.077vw;
+        font-size:3.077vw;
+    }
+    .base_caption{
+        margin-top:2.564vw;
+        font-size:2.564vw;
+    }
+
+    .reserve_period{
+        width:90%;
+        padding:3.077vw 3.846vw;
+        border-radius:2.051vw;
+        font-size:3.077vw;
+    }
+
+    .partner_intro h4{
+        font-size:3.846vw;
+    }
+    .partner_card_grid{
+        grid-template-columns:1fr;
+        gap:4.103vw;
+    }
+    .partner_card{
+        border-width:1px;
+        border-radius:3.077vw;
+        box-shadow:0.769vw 0.769vw 0 0 var(--p400);
+    }
+    .partner_banner{
+        border-bottom-width:1px;
+    }
+    .partner_card_body{
+        padding:4.103vw;
+    }
+    .partner_name{
+        margin-bottom:2.051vw;
+        font-size:4.103vw;
+    }
+    .partner_card_body p:not(.partner_name){
+        margin-top:1.026vw;
+        font-size:3.077vw;
+    }
 
 }
