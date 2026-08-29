@@ -206,3 +206,10 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
 
 
 }
+
+@media (max-width: 780px) {
+    html,
+    body {
+        overflow-y: hidden;
+    }
+}
