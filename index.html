@@ -362,6 +362,46 @@
             }
         </style>
 
+    
+        <style>
+            /* 기본 옵션 구성 - 추천 패키지와 같은 태그형 디자인 */
+            .base_tags{
+                display:flex;
+                flex-wrap:wrap;
+                gap:10px;
+                margin-top:24px;
+            }
+            .base_tags li{
+                padding:8px 15px;
+                border:1px solid var(--p300);
+                border-radius:20px;
+                background:var(--p100);
+                color:var(--p700);
+                font-size:14px;
+                font-weight:600;
+            }
+            .base_caption{
+                margin-top:12px;
+                color:var(--p500);
+                font-size:12px;
+                line-height:1.6;
+            }
+            @media(max-width:780px){
+                .base_tags{
+                    gap:2.051vw;
+                    margin-top:4.615vw;
+                }
+                .base_tags li{
+                    padding:1.538vw 3.077vw;
+                    font-size:3.077vw;
+                }
+                .base_caption{
+                    margin-top:2.564vw;
+                    font-size:2.564vw;
+                }
+            }
+        </style>
+
     </head>
     <body>
         <div id="container">
@@ -623,18 +663,16 @@
                                 타입 구분 없이 <em>모든 작업 풀퀄리티</em>로
                                 <br>최선을 다해 작업합니다.
                             </p>
-                            <ul class="dot_li compose">
-                                <li><p class="txt">얼굴/몸 XYZ</p></li>
-                                <li><p class="txt">입모양 9점</p></li>
-                                <li><p class="txt">눈, 머리카락, 몸, 의상 물리</p></li>
-                                <li>
-                                    <p class="txt">표정 3점</p>
-                                    <span class="caption mona">
-                                        표정파츠가 포함된 PSD를 제공해주셔야합니다.
-                                        <br>애니메이션 기능은 포함되지 않습니다.
-                                    </span>
-                                </li>
-                            </ul>                           
+                            <ul class="base_tags">
+                                <li>얼굴/몸 XYZ</li>
+                                <li>입모양 9점</li>
+                                <li>눈, 머리카락, 몸, 의상 물리</li>
+                                <li>표정 3점</li>
+                            </ul>
+                            <p class="base_caption mona">
+                                표정파츠가 포함된 PSD를 제공해주셔야합니다.
+                                <br>애니메이션 기능은 포함되지 않습니다.
+                            </p>                           
                         </div>
                     </div>
 
