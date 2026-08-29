@@ -76,7 +76,8 @@
             .package_price del{
                 display:block;
                 color:var(--g400);
-                font-size:13px;
+                font-size:18px;
+                font-weight:600;
             }
             .package_price strong{
                 display:block;
@@ -139,7 +140,7 @@
                     text-align:left;
                 }
                 .package_price del{
-                    font-size:2.564vw;
+                    font-size:3.333vw;
                 }
                 .package_price strong{
                     font-size:5.641vw;
@@ -157,6 +158,50 @@
                 .package_tags li{
                     padding:1.538vw 3.077vw;
                     font-size:3.077vw;
+                }
+            }
+        </style>
+
+    
+        <style>
+            /* LD 전신 오픈 할인 가격 강조 */
+            .price_li li.fullbody_sale{
+                align-items:center;
+            }
+            .price_li li.fullbody_sale:before{
+                top:50%;
+            }
+            .fullbody_sale_price{
+                position:relative;
+                z-index:1;
+                display:flex;
+                align-items:center;
+                gap:10px;
+                padding-left:10px;
+                background:#fff;
+            }
+            .fullbody_sale_price del{
+                color:var(--g400);
+                font-size:13px;
+                font-weight:600;
+            }
+            .fullbody_sale_price strong{
+                color:var(--p700);
+                font-family:'SUIT-B';
+                font-size:20px;
+                font-weight:600;
+            }
+
+            @media(max-width:780px){
+                .fullbody_sale_price{
+                    gap:1.538vw;
+                    padding-left:2.564vw;
+                }
+                .fullbody_sale_price del{
+                    font-size:2.564vw;
+                }
+                .fullbody_sale_price strong{
+                    font-size:3.846vw;
                 }
             }
         </style>
@@ -417,7 +462,13 @@
                         <h3 class="con_tt mona">기본 옵션</h3>
                         <div class="con">
                             <ul class="dot_li price_li">
-                                <li><p class="txt">LD 전신 (오픈할인중!) </p><p class="num">600,000</p></li>
+                                <li class="fullbody_sale">
+                                    <p class="txt">LD 전신 <b class="mona">(오픈할인중!)</b></p>
+                                    <div class="fullbody_sale_price">
+                                        <del class="mona">800,000￦</del>
+                                        <strong class="mona">600,000￦</strong>
+                                    </div>
+                                </li>
                                 <li><p class="txt">LD 반신</p><p class="num">500,000</p></li>
                                 <li><p class="txt">SD/마스코트</p><p class="num">150,000+</p></li>
                             </ul>
@@ -489,7 +540,7 @@
                                 </div>
 
                                 <div class="package_price">
-                                    <del class="mona">970,000￦</del>
+                                    <del class="mona">770,000￦</del>
                                     <strong class="mona">750,000￦</strong>
                                     <span class="mona">오픈할인특가</span>
                                 </div>
