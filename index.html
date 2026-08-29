@@ -235,6 +235,97 @@
             }
         </style>
 
+    
+        <style>
+            /* 협업 작가: 2열 배너 카드 */
+            .partner .sec_con{
+                gap:20px;
+            }
+            .partner_intro{
+                padding:0 4px;
+            }
+            .partner_intro h4{
+                color:var(--p700);
+                font-size:18px;
+                font-weight:600;
+            }
+            .partner_card_grid{
+                display:grid;
+                grid-template-columns:repeat(2, minmax(0, 1fr));
+                gap:20px;
+            }
+            .partner_card{
+                overflow:hidden;
+                border:2px solid var(--p300);
+                border-radius:16px;
+                background:#fff;
+                box-shadow:4px 4px 0 0 var(--p400);
+            }
+            .partner_card a{
+                display:block;
+                width:100%;
+                height:100%;
+                color:inherit;
+                text-decoration:none;
+            }
+            .partner_banner{
+                width:100%;
+                aspect-ratio: 2 / 1;
+                overflow:hidden;
+                background:var(--p100);
+                border-bottom:2px solid var(--p300);
+            }
+            .partner_banner img{
+                width:100%;
+                height:100%;
+                object-fit:cover;
+            }
+            .partner_card_body{
+                padding:18px 20px 20px;
+            }
+            .partner_name{
+                margin-bottom:10px;
+                color:var(--g900);
+                font-size:20px;
+                font-weight:600;
+            }
+            .partner_card_body p:not(.partner_name){
+                margin-top:4px;
+                color:var(--g700);
+                font-size:15px;
+                line-height:1.5;
+            }
+
+            @media(max-width:780px){
+                .partner_intro h4{
+                    font-size:3.846vw;
+                }
+                .partner_card_grid{
+                    grid-template-columns:1fr;
+                    gap:4.103vw;
+                }
+                .partner_card{
+                    border-width:1px;
+                    border-radius:3.077vw;
+                    box-shadow:0.769vw 0.769vw 0 0 var(--p400);
+                }
+                .partner_banner{
+                    border-bottom-width:1px;
+                }
+                .partner_card_body{
+                    padding:4.103vw;
+                }
+                .partner_name{
+                    margin-bottom:2.051vw;
+                    font-size:4.103vw;
+                }
+                .partner_card_body p:not(.partner_name){
+                    margin-top:1.026vw;
+                    font-size:3.077vw;
+                }
+            }
+        </style>
+
     </head>
     <body>
         <div id="container">
@@ -494,8 +585,8 @@
                                 <li class="fullbody_sale">
                                     <p class="txt">LD 전신 <span class="fullbody_sale_badge mona">오픈할인특가</span></p>
                                     <div class="fullbody_sale_price">
-                                        <del>800,000</del>
-                                        <strong>600,000</strong>
+                                        <del>800,000￦</del>
+                                        <strong>600,000￦</strong>
                                     </div>
                                 </li>
                                 <li><p class="txt">LD 반신</p><p class="num">500,000</p></li>
@@ -692,73 +783,49 @@
             <section class="partner">
                 <h3 class="sec_tit mona">협업 작가</h3>
                 <div class="sec_con">
-                    
-                    <div class="partner_li">
-                        
-                        <!-- 
-                        
-                        <li class="con_wrap">
-                           <a href="연결될 링크" target="_blank">
-                                <div class="img_sec">
-                                    <img src="./img/prof_img.webp" alt="">
-                                </div>
-                                <div class="txt_sec">
-                                    <div class="info">
-                                        <p class="name mona">작가명</p>
-                                        <p>~</p>
-                                    </div>
-                                    <span class="mona">내용</span>
-                                </div>
-                           </a>
-                        </li> 
-                        
-                        -->
+                    <div class="partner_intro">
+                        <h4 class="mona">일러스트 작가님</h4>
+                    </div>
 
-                        <li class="con_wrap">
-                           <a href="https://artmug.kr/index.php?channel=view&uid=50528" target="_blank">
-                                <div class="img_sec">
-                                    <img src="./img/member_50528.png" alt="">
+                    <ul class="partner_card_grid">
+                        <li class="partner_card">
+                            <a href="https://artmug.kr/index.php?channel=view&uid=50528" target="_blank">
+                                <div class="partner_banner">
+                                    <img src="./img/member_50528_banner.png" alt="해령님 협업 배너">
                                 </div>
-                                <div class="txt_sec">
-                                    <div class="info">
-                                        <p class="name mona">해령님</p>
-                                        <p>일러스트 5+리깅 10 할인!</p>
-                                    </div>
-                                    <span class="mona">바로가기</span>
+                                <div class="partner_card_body">
+                                    <p class="partner_name mona">해령</p>
+                                    <p>일러스트 ₩50,000 할인</p>
+                                    <p>리깅 ₩100,000 할인</p>
                                 </div>
-                           </a>
-                        </li>
-                        
-                        <li class="con_wrap">
-                           <a href="https://artmug.kr/index.php?channel=view&uid=29476" target="_blank">
-                                <div class="img_sec">
-                                    <img src="./img/member_29476.png" alt="">
-                                </div>
-                                <div class="txt_sec">
-                                    <div class="info">
-                                        <p class="name mona">휘월님</p>
-                                        <p>일러스트 10+리깅 10 할인!</p>
-                                    </div>
-                                    <span class="mona">바로가기</span>
-                                </div>
-                           </a>
+                            </a>
                         </li>
 
-                        <li class="con_wrap">
-                           <a href="https://artmug.kr/index.php?channel=view&uid=60548" target="_blank">
-                                <div class="img_sec">
-                                    <img src="./img/member_60548.png" alt="">
+                        <li class="partner_card">
+                            <a href="https://artmug.kr/index.php?channel=view&uid=29476" target="_blank">
+                                <div class="partner_banner">
+                                    <img src="./img/member_29476_banner.png" alt="휘월님 협업 배너">
                                 </div>
-                                <div class="txt_sec">
-                                    <div class="info">
-                                        <p class="name mona">유세님</p>
-                                        <p>일러스트 5+리깅 10 할인!</p>
-                                    </div>
-                                    <span class="mona">바로가기</span>
+                                <div class="partner_card_body">
+                                    <p class="partner_name mona">휘월</p>
+                                    <p>일러스트 ₩100,000 할인</p>
+                                    <p>리깅 ₩100,000 할인</p>
                                 </div>
-                           </a>
+                            </a>
                         </li>
-                        
+
+                        <li class="partner_card">
+                            <a href="https://artmug.kr/index.php?channel=view&uid=60548" target="_blank">
+                                <div class="partner_banner">
+                                    <img src="./img/member_60548_banner.png" alt="유세님 협업 배너">
+                                </div>
+                                <div class="partner_card_body">
+                                    <p class="partner_name mona">유세</p>
+                                    <p>일러스트 ₩50,000 할인</p>
+                                    <p>리깅 ₩100,000 할인</p>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </section>
