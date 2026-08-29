@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +8,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/monas.css">
         <link rel="stylesheet" href="./style/common.css">
-
-
-
-        <style>
-            /* 가격 안내 배치만 변경: 위 2칸 + 아래 추천 패키지 전체폭 */
-            .price .sec_con{
-                flex-wrap: wrap;
-            }
-            .price .sec_con > .con_wrap{
-                flex: 1 1 calc(50% - 15px);
-                min-width: 0;
-            }
-            .price .sec_con > .package_full{
-                flex: 0 0 100%;
-                width: 100%;
-            }
-
-            @media(max-width:780px){
-                .price .sec_con > .con_wrap,
-                .price .sec_con > .package_full{
-                    flex: 0 0 100%;
-                    width: 100%;
-                }
-            }
-        </style>
-
-    
-        <style>
+<style>
             /* 추천 패키지만 상품 카드처럼 강조 */
             .package_full .package_special{
                 padding: 30px;
@@ -161,58 +134,7 @@
                 }
             }
         </style>
-
-    
-        <style>
-            /* LD 전신 오픈 할인 가격 강조 */
-            .price_li li.fullbody_sale{
-                align-items:center;
-            }
-            .price_li li.fullbody_sale:before{
-                top:50%;
-            }
-            .fullbody_sale_price{
-                position:relative;
-                z-index:1;
-                display:flex;
-                align-items:center;
-                gap:10px;
-                padding-left:10px;
-                background:#fff;
-            }
-            .fullbody_sale_price del{
-                color:var(--g400);
-                font-size:16px;
-                font-family:'SUIT-B';
-                font-weight:normal;
-            }
-            .fullbody_sale_price strong{
-                color:var(--p700);
-                font-size:16px;
-                font-family:'SUIT-B';
-                font-weight:normal;
-            }
-
-            @media(max-width:780px){
-                .fullbody_sale_price{
-                    gap:1.538vw;
-                    padding-left:2.564vw;
-                }
-                .fullbody_sale_price del{
-                    font-size:3.077vw;
-                    font-family:'SUIT-B';
-                    font-weight:normal;
-                }
-                .fullbody_sale_price strong{
-                    font-size:3.077vw;
-                    font-family:'SUIT-B';
-                    font-weight:normal;
-                }
-            }
-        </style>
-
-    
-        <style>
+<style>
             /* LD 전신 '오픈할인특가' 강조 배지 */
             .fullbody_sale_badge{
                 display:inline-block;
@@ -234,100 +156,7 @@
                 }
             }
         </style>
-
-    
-        <style>
-            /* 협업 작가: 2열 배너 카드 */
-            .partner .sec_con{
-                gap:20px;
-            }
-            .partner_intro{
-                padding:0 4px;
-            }
-            .partner_intro h4{
-                color:var(--p700);
-                font-size:18px;
-                font-weight:600;
-            }
-            .partner_card_grid{
-                display:grid;
-                grid-template-columns:repeat(2, minmax(0, 1fr));
-                gap:20px;
-            }
-            .partner_card{
-                overflow:hidden;
-                border:2px solid var(--p300);
-                border-radius:16px;
-                background:#fff;
-                box-shadow:4px 4px 0 0 var(--p400);
-            }
-            .partner_card a{
-                display:block;
-                width:100%;
-                height:100%;
-                color:inherit;
-                text-decoration:none;
-            }
-            .partner_banner{
-                width:100%;
-                aspect-ratio: 2 / 1;
-                overflow:hidden;
-                background:var(--p100);
-                border-bottom:2px solid var(--p300);
-            }
-            .partner_banner img{
-                width:100%;
-                height:100%;
-                object-fit:cover;
-            }
-            .partner_card_body{
-                padding:18px 20px 20px;
-            }
-            .partner_name{
-                margin-bottom:10px;
-                color:var(--g900);
-                font-size:20px;
-                font-weight:600;
-            }
-            .partner_card_body p:not(.partner_name){
-                margin-top:4px;
-                color:var(--g700);
-                font-size:15px;
-                line-height:1.5;
-            }
-
-            @media(max-width:780px){
-                .partner_intro h4{
-                    font-size:3.846vw;
-                }
-                .partner_card_grid{
-                    grid-template-columns:1fr;
-                    gap:4.103vw;
-                }
-                .partner_card{
-                    border-width:1px;
-                    border-radius:3.077vw;
-                    box-shadow:0.769vw 0.769vw 0 0 var(--p400);
-                }
-                .partner_banner{
-                    border-bottom-width:1px;
-                }
-                .partner_card_body{
-                    padding:4.103vw;
-                }
-                .partner_name{
-                    margin-bottom:2.051vw;
-                    font-size:4.103vw;
-                }
-                .partner_card_body p:not(.partner_name){
-                    margin-top:1.026vw;
-                    font-size:3.077vw;
-                }
-            }
-        </style>
-
-    
-        <style>
+<style>
             /* 예약 현황 심플 공지 */
             .reservation .sec_con{
                 align-items:center;
@@ -361,48 +190,7 @@
                 }
             }
         </style>
-
-    
-        <style>
-            /* 기본 옵션 구성 - 추천 패키지와 같은 태그형 디자인 */
-            .base_tags{
-                display:flex;
-                flex-wrap:wrap;
-                gap:10px;
-                margin-top:24px;
-            }
-            .base_tags li{
-                padding:8px 15px;
-                border:1px solid var(--p300);
-                border-radius:20px;
-                background:var(--p100);
-                color:var(--p700);
-                font-size:14px;
-                font-weight:600;
-            }
-            .base_caption{
-                margin-top:12px;
-                color:var(--p500);
-                font-size:12px;
-                line-height:1.6;
-            }
-            @media(max-width:780px){
-                .base_tags{
-                    gap:2.051vw;
-                    margin-top:4.615vw;
-                }
-                .base_tags li{
-                    padding:1.538vw 3.077vw;
-                    font-size:3.077vw;
-                }
-                .base_caption{
-                    margin-top:2.564vw;
-                    font-size:2.564vw;
-                }
-            }
-        </style>
-
-    </head>
+</head>
     <body>
         <div id="container">
 
@@ -418,7 +206,7 @@
                     </div>
                     <div class="intro">
                         <h3 class="tit mona">Introduce</h3>
-                        <p>캐릭터의 매력을 돋보이게 하는 리깅을 추구합니다.
+                        <p>캐릭터의 매력을 돋보이는 리깅을 추구합니다.
                         <br>타입 구분없이 모든 작업 전심전력으로 최선을 다해 작업합니다!</p>
                     </div>
                 </div>
@@ -455,8 +243,6 @@
                             위 영상을 예로 들면 & 뒤는 다 지우고 v= 바로 뒤의 단어인 Kal4pauop5U 값이 영상의 id 값.
                             data-code ="영상 id값 넣으면 썸네일과 영상슬라이드에 자동 추가됩니다."
                             
-
-
 
                             <li class="swiper-slide">
                                 <div class="video" data-code="영상 id값">
@@ -670,7 +456,7 @@
                                 <li>표정 3점</li>
                             </ul>
                             <p class="base_caption mona">
-                                표정파츠가 포함된 PSD를 제공해 주셔야 합니다.
+                                표정파츠가 포함된 PSD를 제공해주셔야합니다.
                                 <br>애니메이션 기능은 포함되지 않습니다.
                             </p>                           
                         </div>
@@ -687,7 +473,6 @@
 
                                 <li>
                                     <p class="txt">VBridger <b class="mona">(섬세한 입표현/입삐죽/오물오물)</b></p><p class="num">140,000</p>
-                                    </span>
                                 </li>
                                 <li><p class="txt">볼빵빵</p><p class="num">30,000+</p></li>
                                 <li><p class="txt">혀 내밀기</p><p class="num">80,000+</p></li>
@@ -901,11 +686,11 @@
                     <div class="con_wrap">
                         <p class="request_txt">
 ★0. PSD파일 첨부 필수!★
-1. 개인/기업: 
+1. 개인or기업: 
 2. 활동 닉네임: 
 3. 신청 타입: (LD전신 / LD반신 / 기타(SD/마스코트/동물캐릭터))
 4. 추가 옵션: 
-5. 방송장비: (웹캠 / 아이폰)
+5. 방송장비: (웹캠 or 아이폰)
 6. 일러스트 작가님: 
 7. 제작과정 공개가능 여부&작업물 공개가능일 (영구비공개 불가):
 8. 캐릭터 설정 및 참고자료:
