@@ -326,6 +326,95 @@
             }
         </style>
 
+    
+        <style>
+            /* 예약 현황 강조 */
+            .reservation .sec_con{
+                align-items:center;
+                justify-content:center;
+            }
+            .reserve_focus{
+                width:100%;
+                max-width:560px;
+                padding:28px 24px 8px;
+                text-align:center;
+            }
+            .reserve_badge{
+                display:inline-block;
+                padding:5px 12px;
+                margin-bottom:12px;
+                background:var(--p500);
+                color:#fff;
+                border-radius:20px;
+                font-size:12px;
+                font-weight:600;
+            }
+            .reserve_original{
+                display:block;
+                margin-bottom:4px;
+                color:var(--g400);
+                font-size:16px;
+                font-family:'SUIT-B';
+            }
+            .reserve_sale{
+                display:block;
+                color:var(--p700);
+                font-size:34px;
+                line-height:1.15;
+                font-family:'SUIT-B';
+                font-weight:normal;
+            }
+            .reserve_sale_text{
+                display:inline-block;
+                margin-top:10px;
+                padding:5px 10px;
+                background:var(--p300);
+                color:var(--p700);
+                font-size:13px;
+                font-weight:600;
+            }
+            .reserve_period{
+                margin-top:24px;
+                padding:12px 16px;
+                border:1px solid var(--p300);
+                border-radius:8px;
+                background:var(--p100);
+                color:var(--g700);
+                font-size:15px;
+                font-weight:600;
+            }
+
+            @media(max-width:780px){
+                .reserve_focus{
+                    max-width:none;
+                    padding:5.128vw 2.564vw 1.538vw;
+                }
+                .reserve_badge{
+                    padding:1.026vw 2.564vw;
+                    margin-bottom:2.051vw;
+                    font-size:2.564vw;
+                }
+                .reserve_original{
+                    margin-bottom:1.026vw;
+                    font-size:3.077vw;
+                }
+                .reserve_sale{
+                    font-size:6.154vw;
+                }
+                .reserve_sale_text{
+                    margin-top:2.051vw;
+                    padding:1.026vw 2.051vw;
+                    font-size:2.821vw;
+                }
+                .reserve_period{
+                    margin-top:4.103vw;
+                    padding:2.564vw 3.077vw;
+                    border-radius:2.051vw;
+                    font-size:3.077vw;
+                }
+            }
+        </style>
+
     </head>
     <body>
         <div id="container">
@@ -354,18 +443,13 @@
             <section class="reservation">
                 <h3 class="sec_tit mona">예약 현황</h3>
                 <div class="sec_con">
-                    <ul class="date_li">
-                        <li>
-                            <div class="reserve_notice">
-                                <del><p class="con_tt mona">800,000￦</p></del>
-                                <em class="con_tt mona">☞ 600,000￦ 오픈 할인 행사 중!</em>
-                            </div>
-                        </li>
-
-                        <li>
-                            <p class="month mona">2026년 하반기 예약받고 있습니다.</p>
-                        </li>
-                    </ul>
+                    <div class="reserve_focus">
+                        <span class="reserve_badge mona">OPEN SALE</span>
+                        <del class="reserve_original">800,000￦</del>
+                        <strong class="reserve_sale">600,000￦</strong>
+                        <span class="reserve_sale_text mona">오픈 할인 행사 중!</span>
+                        <p class="reserve_period mona">✦ 2026년 하반기 예약 접수 중 ✦</p>
+                    </div>
                 </div>
             </section>
             <!-- // 예약 현황 -->
