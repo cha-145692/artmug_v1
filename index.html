@@ -8,188 +8,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MonadABXY/mona-font/web/monas.css">
         <link rel="stylesheet" href="./style/common.css">
-<style>
-            /* 추천 패키지만 상품 카드처럼 강조 */
-            .package_full .package_special{
-                padding: 30px;
-            }
-            .package_head{
-                display:flex;
-                align-items:center;
-                justify-content:space-between;
-                gap:30px;
-            }
-            .package_info{
-                min-width:0;
-            }
-            .package_badge{
-                display:inline-block;
-                padding:5px 12px;
-                margin-bottom:10px;
-                background:var(--p500);
-                color:#fff;
-                border-radius:20px;
-                font-size:12px;
-                font-weight:600;
-            }
-            .package_name{
-                color:var(--g900);
-                font-size:24px;
-                font-weight:600;
-            }
-            .package_copy{
-                margin-top:10px;
-                color:var(--g700);
-                font-size:14px;
-            }
-            .package_price{
-                flex-shrink:0;
-                text-align:right;
-            }
-            .package_price del{
-                display:block;
-                color:var(--g400);
-                font-size:18px;
-                font-weight:600;
-            }
-            .package_price strong{
-                display:block;
-                margin-top:3px;
-                color:var(--p700);
-                font-size:28px;
-                font-weight:600;
-            }
-            .package_price span{
-                display:inline-block;
-                margin-top:7px;
-                padding:4px 9px;
-                background:var(--p300);
-                color:var(--p700);
-                font-size:12px;
-                font-weight:600;
-            }
-            .package_tags{
-                display:flex;
-                gap:10px;
-                flex-wrap:wrap;
-                margin-top:24px;
-                padding-top:20px;
-                border-top:2px dotted var(--p300);
-            }
-            .package_tags li{
-                padding:8px 15px;
-                border:1px solid var(--p300);
-                border-radius:20px;
-                background:var(--p100);
-                color:var(--p700);
-                font-size:14px;
-                font-weight:600;
-            }
 
-            @media(max-width:780px){
-                .package_full .package_special{
-                    padding:5.128vw 3.846vw;
-                }
-                .package_head{
-                    align-items:flex-start;
-                    flex-direction:column;
-                    gap:4.103vw;
-                }
-                .package_badge{
-                    padding:1.026vw 2.564vw;
-                    margin-bottom:2.051vw;
-                    font-size:2.564vw;
-                }
-                .package_name{
-                    font-size:4.615vw;
-                }
-                .package_copy{
-                    margin-top:2.051vw;
-                    font-size:3.077vw;
-                    line-height:1.6;
-                }
-                .package_price{
-                    width:100%;
-                    text-align:left;
-                }
-                .package_price del{
-                    font-size:3.333vw;
-                }
-                .package_price strong{
-                    font-size:5.641vw;
-                }
-                .package_price span{
-                    margin-top:1.538vw;
-                    padding:1.026vw 2.051vw;
-                    font-size:2.564vw;
-                }
-                .package_tags{
-                    gap:2.051vw;
-                    margin-top:4.615vw;
-                    padding-top:3.846vw;
-                }
-                .package_tags li{
-                    padding:1.538vw 3.077vw;
-                    font-size:3.077vw;
-                }
-            }
-        </style>
-<style>
-            /* LD 전신 '오픈할인특가' 강조 배지 */
-            .fullbody_sale_badge{
-                display:inline-block;
-                margin-left:6px;
-                padding:4px 9px;
-                background:var(--p300);
-                color:var(--p700);
-                font-size:12px;
-                font-weight:600;
-                line-height:1.2;
-                vertical-align:middle;
-            }
-
-            @media(max-width:780px){
-                .fullbody_sale_badge{
-                    margin-left:1.026vw;
-                    padding:1.026vw 2.051vw;
-                    font-size:2.564vw;
-                }
-            }
-        </style>
-<style>
-            /* 예약 현황 심플 공지 */
-            .reservation .sec_con{
-                align-items:center;
-                justify-content:center;
-            }
-            .reserve_simple{
-                width:100%;
-                display:flex;
-                justify-content:center;
-                align-items:center;
-            }
-            .reserve_period{
-                box-sizing:border-box;
-                width:70%;
-                margin:0 auto;
-                padding:16px 20px;
-                text-align:center;
-                border:1px solid var(--p300);
-                border-radius:8px;
-                background:var(--p100);
-                color:var(--g700);
-                font-size:15px;
-                font-weight:600;
-            }
-            @media(max-width:780px){
-                .reserve_period{
-                    width:90%;
-                    padding:3.077vw 3.846vw;
-                    border-radius:2.051vw;
-                    font-size:3.077vw;
-                }
-            }
-        </style>
 </head>
     <body>
         <div id="container">
@@ -206,7 +25,7 @@
                     </div>
                     <div class="intro">
                         <h3 class="tit mona">Introduce</h3>
-                        <p>캐릭터의 매력을 돋보이는 리깅을 추구합니다.
+                        <p>캐릭터의 매력을 돋보이게 하는 리깅을 추구합니다.
                         <br>타입 구분없이 모든 작업 전심전력으로 최선을 다해 작업합니다!</p>
                     </div>
                 </div>
@@ -224,7 +43,6 @@
                 </div>
             </section>
             <!-- // 예약 현황 -->
-
 
             <!-- 포트폴리오 현황 -->
             <section class="portfolio nav_sec" id="portfolio">
@@ -271,7 +89,6 @@
                                 </div>
                             </li>
 
-
                             
                             <!-- 슬라이드 항목-->
                             <li class="swiper-slide">
@@ -284,7 +101,6 @@
                                 </div>
                             </li>
 
-
                             
                             <!-- 슬라이드 항목-->
                             <li class="swiper-slide">
@@ -296,7 +112,6 @@
                                     <p>Rig-단청 Art-해령</p>
                                 </div>
                             </li>
-
 
                             
                             <!-- //슬라이드 항목 -->
@@ -456,7 +271,7 @@
                                 <li>표정 3점</li>
                             </ul>
                             <p class="base_caption mona">
-                                표정파츠가 포함된 PSD를 제공해주셔야합니다.
+                                표정파츠가 포함된 PSD를 제공해 주셔야 합니다.
                                 <br>애니메이션 기능은 포함되지 않습니다.
                             </p>                           
                         </div>
@@ -497,7 +312,6 @@
                             </p>
                         </div>
                     </div>
-
 
                     <div class="con_wrap package_full">
                         <h3 class="con_tt mona">추천 패키지</h3>
@@ -686,11 +500,11 @@
                     <div class="con_wrap">
                         <p class="request_txt">
 ★0. PSD파일 첨부 필수!★
-1. 개인or기업: 
+1. 개인/기업: 
 2. 활동 닉네임: 
 3. 신청 타입: (LD전신 / LD반신 / 기타(SD/마스코트/동물캐릭터))
 4. 추가 옵션: 
-5. 방송장비: (웹캠 or 아이폰)
+5. 방송장비: (웹캠 / 아이폰)
 6. 일러스트 작가님: 
 7. 제작과정 공개가능 여부&작업물 공개가능일 (영구비공개 불가):
 8. 캐릭터 설정 및 참고자료:
@@ -702,7 +516,6 @@
                 </div>
             </section>
             <!-- // 의뢰 신청 양식 -->
-
 
         </div>
 
