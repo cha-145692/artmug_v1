@@ -206,6 +206,30 @@
             }
         </style>
 
+    
+        <style>
+            /* LD 전신 '오픈할인특가' 강조 배지 */
+            .fullbody_sale_badge{
+                display:inline-block;
+                margin-left:6px;
+                padding:4px 9px;
+                background:var(--p300);
+                color:var(--p700);
+                font-size:12px;
+                font-weight:600;
+                line-height:1.2;
+                vertical-align:middle;
+            }
+
+            @media(max-width:780px){
+                .fullbody_sale_badge{
+                    margin-left:1.026vw;
+                    padding:1.026vw 2.051vw;
+                    font-size:2.564vw;
+                }
+            }
+        </style>
+
     </head>
     <body>
         <div id="container">
@@ -463,7 +487,7 @@
                         <div class="con">
                             <ul class="dot_li price_li">
                                 <li class="fullbody_sale">
-                                    <p class="txt">LD 전신 <b class="mona">(오픈할인중!)</b></p>
+                                    <p class="txt">LD 전신 <span class="fullbody_sale_badge mona">오픈할인특가</span></p>
                                     <div class="fullbody_sale_price">
                                         <del class="mona">800,000￦</del>
                                         <strong class="mona">600,000￦</strong>
