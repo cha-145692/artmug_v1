@@ -33,16 +33,54 @@
             <!-- // 프로필 -->
             
 
-            <!-- 예약 현황 -->
-            <section class="reservation">
-                <h3 class="sec_tit mona">예약 현황</h3>
-                <div class="sec_con">
-                    <div class="reserve_simple">
-                        <p class="reserve_period mona">✦ 2026년 하반기 예약 접수 중 ✦</p>
-                    </div>
+<!-- 예약 현황 -->
+<section class="reservation">
+    <h3 class="sec_tit mona">예약 현황</h3>
+
+    <div class="sec_con">
+        <div class="reserve_simple">
+            <p class="reserve_period mona">
+                ✦ 2026년 하반기 예약 접수 중 ✦
+            </p>
+        </div>
+
+        <ul class="reserve_slots">
+            <!--
+                마감 : <span class="star fill"></span>
+                빈 슬롯 : <span class="star"></span>
+            -->
+
+            <li>
+                <p class="month mona">9월</p>
+                <div class="star_wrap">
+                    <span class="star"></span>
+                    <span class="star"></span>
                 </div>
-            </section>
-            <!-- // 예약 현황 -->
+            </li>
+
+            <li>
+                <p class="month mona">10월</p>
+                <div class="star_wrap">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+            </li>
+
+            <li>
+                <p class="month mona">11월</p>
+                <div class="star_wrap">
+                    <span class="star fill"></span>
+                    <span class="star"></span>
+                </div>
+            </li>
+        </ul>
+
+        <p class="reserve_caption">
+            빈 별은 예약 가능 · 채워진 별은 예약 마감
+        </p>
+    </div>
+</section>
+<!-- // 예약 현황 -->
 
             <!-- 포트폴리오 현황 -->
             <section class="portfolio nav_sec" id="portfolio">
