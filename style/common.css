@@ -554,7 +554,7 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     .reserve_slots li{
         flex:1;
         justify-content:center;
-        min-width:28%;
+        min-width:20%;
         gap:1.538vw;
         padding:2.051vw 2.564vw;
         border-radius:2.051vw;
