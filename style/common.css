@@ -552,12 +552,12 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
         gap:2.051vw;
     }
     .reserve_slots li{
-        flex:1;
-        justify-content:center;
-        min-width:20%;
-        gap:1.538vw;
-        padding:2.051vw 2.564vw;
-        border-radius:2.051vw;
+    box-sizing:border-box;
+    flex:0 0 calc(50% - 1.026vw);
+    justify-content:center;
+    gap:1.538vw;
+    padding:2.051vw 2.564vw;
+    border-radius:2.051vw;
     }
     .reserve_slots .month{
         font-size:3.077vw;
