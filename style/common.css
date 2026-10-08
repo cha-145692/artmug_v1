@@ -601,86 +601,48 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     }
 }
 
-/* 사용 범위 안내 - PC / 모바일 공통 */
+/* 사용 범위 안내 */
 .notice .usage_table {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
     font-size: 15px;
     line-height: 1.6;
-    color: var(--g900);
 }
-
 .notice .usage_table th,
 .notice .usage_table td {
-    box-sizing: border-box;
-    padding: 15px 12px;
+    padding: 14px 10px;
     border-bottom: 1px solid var(--p300);
-    vertical-align: middle;
     text-align: center;
+    vertical-align: middle;
     word-break: keep-all;
 }
-
 .notice .usage_table th {
     background: var(--p100);
     color: var(--p600);
     font-weight: 600;
-    border-bottom: 2px solid var(--p300);
 }
-
 .notice .usage_table th:first-child,
 .notice .usage_table td:first-child {
     width: 50%;
     text-align: left;
-    padding-left: 20px;
 }
-
 .notice .usage_table th:nth-child(2),
 .notice .usage_table td:nth-child(2),
 .notice .usage_table th:nth-child(3),
-.notice .usage_table td:nth-child(3) {
-    width: 25%;
-}
-
-.notice .usage_table tbody tr:last-child td {
-    border-bottom: none;
-}
-
-.notice .usage_table td:not(:first-child) {
-    color: var(--p700);
-    font-weight: 600;
-}
-
+.notice .usage_table td:nth-child(3) { width: 25%; }
 .notice .usage_notice {
-    margin-top: 20px;
-    padding: 15px 20px;
+    margin-top: 18px;
+    padding: 12px 16px;
     background: var(--p100);
     border-radius: 8px;
     color: var(--g700);
     font-size: 13px;
-    line-height: 2;
-    word-break: keep-all;
+    line-height: 1.8;
 }
-
-/* 사용 범위 안내 - 모바일 */
 @media (max-width: 780px) {
-    .notice .usage_table {
-        font-size: 3.077vw;
-    }
-
+    .notice .usage_table { font-size: 3.077vw; }
     .notice .usage_table th,
-    .notice .usage_table td {
-        padding: 3.077vw 1.282vw;
-    }
-
-    .notice .usage_table th:first-child,
-    .notice .usage_table td:first-child {
-        padding-left: 2.564vw;
-    }
-
-    .notice .usage_notice {
-        padding: 3.077vw;
-        font-size: 2.564vw;
-        line-height: 1.8;
-    }
+    .notice .usage_table td { padding: 2.564vw 1.282vw; }
+    .notice .usage_notice { font-size: 2.564vw; padding: 3.077vw; }
 }
