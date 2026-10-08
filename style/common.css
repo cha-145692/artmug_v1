@@ -601,6 +601,7 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     }
    
 
+
 /* 사용 범위 안내 */
 .notice .usage_table {
     width: 100%;
@@ -613,19 +614,18 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
 
 .notice .usage_table th,
 .notice .usage_table td {
-    padding: 16px 12px;
-    border-bottom: 1px solid #f2e5c5;
+    padding: 15px 12px;
+    border-bottom: 1px solid var(--p300);
     vertical-align: middle;
     text-align: center;
     word-break: keep-all;
 }
 
 .notice .usage_table th {
-    background: #fff8e5;
-    color: #e99a00;
-    font-weight: 700;
-    border-top: 2px solid #ffda78;
-    border-bottom: 2px solid #ffda78;
+    background: var(--p100);
+    color: var(--p600);
+    font-weight: 600;
+    border-bottom: 2px solid var(--p300);
 }
 
 .notice .usage_table th:first-child,
@@ -647,40 +647,41 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
 }
 
 .notice .usage_table td:not(:first-child) {
-    color: #e95079;
+    color: var(--p700);
     font-weight: 600;
 }
 
 .notice .usage_notice {
-    margin-top: 22px;
-    padding: 16px 20px;
-    background: #fffaf0;
-    border-radius: 10px;
-    color: #777;
+    margin-top: 20px;
+    padding: 15px 20px;
+    background: var(--p100);
+    border-radius: 8px;
+    color: var(--g700);
     font-size: 13px;
     line-height: 2;
     word-break: keep-all;
 }
 
-/* 모바일 */
-@media (max-width: 600px) {
+/* 사용 범위 안내 - 모바일 */
+@media (max-width: 780px) {
     .notice .usage_table {
-        font-size: 12px;
+        font-size: 3.077vw;
     }
 
     .notice .usage_table th,
     .notice .usage_table td {
-        padding: 12px 5px;
+        padding: 3.077vw 1.282vw;
     }
 
     .notice .usage_table th:first-child,
     .notice .usage_table td:first-child {
-        padding-left: 8px;
+        padding-left: 2.564vw;
     }
 
     .notice .usage_notice {
-        padding: 12px;
-        font-size: 11px;
+        padding: 3.077vw;
+        font-size: 2.564vw;
         line-height: 1.8;
     }
 }
+
