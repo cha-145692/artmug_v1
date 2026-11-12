@@ -646,3 +646,12 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
     .notice .usage_table td { padding: 2.564vw 1.282vw; }
     .notice .usage_notice { font-size: 2.564vw; padding: 3.077vw; }
 }
+
+
+/* 추천 패키지 사이 구분선 */
+.package_full .package_special + .package_special {
+    border-top: 2px dashed #FFD76A;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
