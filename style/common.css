@@ -649,9 +649,10 @@ nav .nav_li li button{border:none; background: none; font-size:18px; font-weight
 
 
 /* 추천 패키지 사이 구분선 */
-.package_full .package_special + .package_special {
+.price .package_full > .package_special + .package_special {
     border-top: 2px dashed #FFD76A;
-    margin-top: 30px;
+    margin-top: 0;
     padding-top: 30px;
 }
+
 
