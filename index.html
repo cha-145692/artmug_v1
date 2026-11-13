@@ -2612,7 +2612,7 @@ const applyBreath=()=>{const core=internal?.coreModel;if(!core)return;
   try{core.setParameterValueById('ParamBreath',breath)}catch(e){console.warn('Live2D breath:',e)}
 };
 const smoothTracking=()=>{cx+=(tx-cx)*.12;cy+=(ty-cy)*.12;cz+=(tz-cz)*.12};
-const applyTracking=()=>{const core=internal?.coreModel;if(!core)return;for(const [id,val] of [['ParamAngleX',cx*30],['ParamAngleY',-cy*30],['ParamAngleZ',cz*30],['ParamBodyAngleX',cx*8],['ParamBodyAngleY',-cy*5],['ParamEyeBallX',cx],['ParamEyeBallY',-cy]]){try{core.setParameterValueById(id,val)}catch(e){console.warn('Live2D parameter:',id,e)}}};
+const applyTracking=()=>{const core=internal?.coreModel;if(!core)return;for(const [id,val] of [['ParamAngleX',cx*30],['ParamAngleY',-cy*30],['ParamAngleZ',cz*30],['ParamBodyAngleX',cx*8],['ParamBodyAngleY',-cy*5],['ParamBodyAngleZ',cz*10],['ParamEyeBallX',cx],['ParamEyeBallY',-cy]]){try{core.setParameterValueById(id,val)}catch(e){console.warn('Live2D parameter:',id,e)}}};
 if(motion&&typeof motion.update==='function'){
  const originalMotionUpdate=motion.update;
  motion.update=function(...args){const result=originalMotionUpdate.apply(this,args);smoothTracking();applyTracking();applyBreath();return result};
